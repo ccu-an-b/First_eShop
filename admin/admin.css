@@ -1,0 +1,35 @@
+.list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.list .elem {
+	display: flex;
+	flex-direction: row;
+	margin: 0px 10px;
+	justify-content: space-evenly;
+	text-align: center;
+}
+
+.list .elem.user,.cat {
+	width: 300px;
+}
+
+.list .elem.product,.pan {
+	width: 500px;
+}
+
+.list .elem form button{
+	margin: 20px 0px;
+}
+
+.list .elem img {
+	width: 60px;
+	height: 60px;
+	object-fit: cover;
+}
+
+.modif form * {
+	margin: 10px 10px;
+}

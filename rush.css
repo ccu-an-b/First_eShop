@@ -1,0 +1,300 @@
+body {
+	margin : 0;
+	color : #00303F;
+	font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+	color:#00303F;
+	font: 400 5vw/0.01'Cookie', Helvetica, sans-serif;
+	text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+	float: left;
+	vertical-align:center;
+	position:relative;
+}
+
+h2 {
+	color: #00303F;
+	font-size: 1.8vw;
+	font-family: 'Quicksand', sans-serif;
+}
+
+h3 {
+	font-size: 2vw;
+	color: #FF7644;
+	font-family: 'Quicksand', sans-serif;
+}
+
+h4 {
+	color:red;
+	text-align:center;
+	font-size:1.2vw;
+	font-family: 'Quicksand', sans-serif;
+
+}
+a	{
+	text-decoration : none;
+}
+
+a:visited{
+	color:#00303F;
+}
+
+a:link {
+	color:#00303F;
+}
+
+input {
+
+	width:10%;
+	height10%;
+
+}
+
+
+/*Div communes a chaque page*/
+.header {
+	background-color:#C5DCDD;
+	height: 5vw;
+	width: 100%;	
+	vertical-align:center;
+	position:absolute;
+}
+
+.welcome {
+	height:10vw;
+	background-image: url("https://images.unsplash.com/uploads/1411599070526e808c923/239f12cc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9177cf7264f44d823da49392012c62de&auto=format&fit=crop&w=1500&q=80");
+	background-color: #cccccc;
+	background-size: 100%;
+	text-align:center;
+	padding-top:5%;
+}
+
+.banner {
+	width: 100%;
+}
+
+.main {
+	margin-left: 10%;
+	margin-right:10%;
+	background-color:#FFECE5;
+	padding:1%;
+	border-radius:10px;
+}
+
+.welcome_text {
+text-shadow: 6px 6px 4px rgba(0,0,0,0.1);
+
+	margin-top:5%;
+	font-family: 'Indie Flower', cursive;
+}
+
+/*Sous division de .header*/
+
+.header .user   {
+	float: right;
+	width: 40%;
+	text-align: center;
+	margin-top:2vw;
+}
+
+.panier_count {
+	background-image : url("./icons/panier.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.logo {
+	float : left;
+	height: 3vw;
+	width:3.5vw;
+	padding-top:1.3%;
+	padding-right:0.5%;
+	padding-left:0.8%;
+}
+
+.logo .img {
+	width:10%;
+	height:20%;
+}
+table.user h2:hover {
+	color: rgba(255,154,117);
+}
+
+/*Sous division de .banner*/
+.category {
+	width: 100%;
+	text-align: center;
+	background-color:#DEF1F9;
+	height: 4vw;
+	table-layout: fixed;
+	font-size:1.5vw;
+	font-weight:bold;
+	text-transform:uppercase;
+	position: relative;
+}
+
+table.category td:hover{
+	background-color:  #FF9A75;
+	border-radius:10px;
+}
+
+table.category a {
+	display: block;
+	padding: 3% 0%;
+}
+
+/*Sous division des produits*/
+.product_list {
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+	background-color:#EDDBCD;
+	table-layout:fixed;
+	font-size: 1.1vw;
+}
+
+.all_product {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+
+.all_product .product_aff {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px;
+	background-color:rgba(255,255, 255, 0.4);
+	border-radius:3px;
+}
+
+
+.product_aff .product {
+	align-items: center;
+	text-align:center;
+	margin: 20px;
+	padding: 15px;
+	background-color:rgba(255,255, 255, 0.9);
+	border-radius:3px;
+	width: 250px;
+	height: 300px;
+}
+
+.info {
+	padding-top: 30px;
+	font-weight: bold;
+	font-size: 20px;
+}
+	
+.all_product .product img {
+	height: 230px;
+	width:  230px;
+	border-radius: 3px;
+	object-fit: cover;
+}
+
+.all_product .product p {
+	margin: 0px;
+}
+
+
+/*Sous division panier*/
+.panier .product img {
+	height: 90%;
+	width:auto;
+	border-radius: 5px;
+
+}
+
+.panier * {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 60px;
+}
+
+.panier .product  {
+	background-color: rgba(255,255, 255, 0.9);
+	border-radius: 10px;
+	font-size:1.5vw;
+	height: 5vw;
+	margin-left:5%;
+	margin-right:5%;
+}
+
+.panier .product input {
+	margin-top : 8%;
+	text-align: center;
+}
+
+.panier .product button {
+	margin-top: 8%;
+	height: 2vw;
+	border-radius:10px;
+	color:#00303F;
+	font-size:1vw;
+}
+.panier input {
+	height : 2.3vw;
+	font-size:1.5vw;
+	border-radius:5px;
+	color:#FF7644;
+	width: 30%;
+}
+
+/*Page connexion*/
+.connexion {
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:10px;
+	border-color:#F7FEFF;
+	background-color:white;
+	padding-right:7%;
+	padding-left:10%;
+	padding-top:2%;
+	padding-bottom:2%;
+	table-layout:fixed;
+}
+
+.connexion_form {
+	width:90%;
+	background-color:#DEF1F9;;
+	padding:2%;
+	border-radius:10px;
+}
+
+.connexion tr {
+	height: 2vw;
+}
+
+.connexion td {
+	color:#00303F;
+	font-size:1vw;
+}
+
+.connexion input {
+	height : 1.5vw;
+	width: 100%;
+	font-size:1vw;
+	border-radius:5px;
+	color:#FF7644;
+}
+
+input:hover {
+	background-color:#C5DCDD;
+}
+
+.admin {
+	width: 100%;
+}
+.admin form {
+	display: flex;
+}
+
+.admin form button {
+	width: 100%;
+	font-size: 150%;
+}
